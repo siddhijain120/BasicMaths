@@ -9,8 +9,11 @@ int main() {
 		if(a > b) a = a % b;
 		else b = b % a;
 	}
-	if(a == 0) cout << b;
-	else cout << a;
+	cout << "GCD : " << (a == 0 ? b : a);
+
+//ALTERNATE USING STL
 //	int Gcd = __gcd(a,b);
 //	cout << Gcd;
+
+//TIME COMPLEXITY - O(log(min(a,b)))  SPACE COMPLEXTIY -O(1)
 }
