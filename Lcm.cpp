@@ -17,4 +17,5 @@ int main() {
     }
     int lcm = res * n1 * n2;
     cout << lcm;
+    //TIME COMPLEXITY - O(min(n1,n2))   SPACE COMPLEXITY - O(1)
 }
