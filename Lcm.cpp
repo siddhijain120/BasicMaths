@@ -6,7 +6,7 @@ int main() {
     cin >> n1 >> n2;
     int r = 2;
     int res = 1;
-    while(true) {
+    while(r <= n1 && r <= n2) {
         if((n1 % r == 0)&& (n2 % r == 0)) {
             n1 =  n1 / r;
             n2 = n2 / r;
@@ -14,7 +14,6 @@ int main() {
         } else {
             r++;
         }
-        if(r > n1 or r > n2) break;
     }
     int lcm = res * n1 * n2;
     cout << lcm;
